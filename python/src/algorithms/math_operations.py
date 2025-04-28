@@ -12,6 +12,10 @@ def factorial(num: int) -> int:
         fac *= i
     return fac
 
+# Factorial recursion
+def factorial_recursion(num: int) -> int:
+    return 1 if num <= 1 else num * factorial(num-1) # se o numero for maior q 1 ele chama a função-1 até o numero virar 1
+
 # Verifica se um numero passado é primo ou não
 def is_primeNumber(num):
     i = 1
